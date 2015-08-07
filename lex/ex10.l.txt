@@ -1,0 +1,30 @@
+%{
+#include "scanner.h"
+ extern char* yytext;
+%}
+int [0-9]+
+ip {int}\.{int}\.{int}\.{int}
+port {int}
+identifier [a-zA-Z_][a-zA-Z0-9_]*
+passwordText  [a-zA-Z0-9_@#]+
+whiteSpace [ \n\t]
+
+
+%%
+"server"   return server;
+"port"     return port;
+"database" return database;
+"userid"   return userid;
+"password" return password;
+{ip}       return serverIP;
+{int}      return portno;
+{identifier} return identifier;
+{passwordText} return passwordText;
+"="            return equal;
+{whiteSpace}     ;
+
+.          printf("Unidentified element - %s\n",yytext);
+%%
+int yywrap(void){
+   return 1;
+}
