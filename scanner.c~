@@ -32,8 +32,7 @@ int main(void){
 				printf("TOKEN is set to %s\n",yytext);
 				break;
 			default:
-				printf("syntax error at line number %d\n",yylineno);
-				break;	
+				printf("syntax error at line number %d\n",yylineno);	
 		}
 			
 		name_token = yylex(); // Get next token
