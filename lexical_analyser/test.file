@@ -1,0 +1,9 @@
+begin
+integer a = 5, b, c;
+
+c = a + 10;
+if (c > 20) then
+writeln(c);
+end if
+
+end
