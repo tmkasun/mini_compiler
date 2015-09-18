@@ -1,4 +1,13 @@
 ## Introduction 
+                                  +-------+
+                        Source -> |  Lex  |  -> yylex
+                                  +-------+
+
+                                  +-------+
+                        Input ->  | yylex | -> Output
+                                  +-------+
+
+                             An overview of Lex
 * This repository contains components of a compiler in order to learn the basics of compilers
 * Some codes are real implimentations of video tutorials and [stanford online course](https://www.coursera.org/course/compilers)
 
