@@ -6,8 +6,24 @@
                                   +-------+
                         Input ->  | yylex | -> Output
                                   +-------+
+                              An overview of Lex
+                              
+                        lexical        grammar
+                         rules          rules
+                           |              |
+                           v              v
+                      +---------+    +---------+
+                      |   Lex   |    |  Yacc   |
+                      +---------+    +---------+
+                           |              |
+                           v              v
+                      +---------+    +---------+
+             Input -> |  yylex  | -> | yyparse | -> Parsed input
+                      +---------+    +---------+
 
-                             An overview of Lex
+
+                            Lex with Yacc
+                            
 * This repository contains components of a compiler in order to learn the basics of compilers
 * Some codes are real implimentations of video tutorials and [stanford online course](https://www.coursera.org/course/compilers)
 
