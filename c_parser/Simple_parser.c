@@ -4,10 +4,13 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <tcl.h>
 
 #define TRUE 1
 #define FALSE 0
+
+#define WORD_TOKEN  0
+#define NUMBER_TOKEN  1
+#define INIT  -1
 
 
 int main(int argc, char *argv[]) {
@@ -24,10 +27,6 @@ int main(int argc, char *argv[]) {
     }
     printf("Input file opened sucsussfully!\n");
 
-
-    CONST int WORD_TOKEN = 0;
-    CONST int NUMBER_TOKEN = 1;
-    CONST int INIT = -1;
 
     char token[255];
     int token_index = 0;
