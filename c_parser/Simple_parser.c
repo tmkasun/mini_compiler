@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     int line_number = 0, column_number = 0;
 
     int current_character;
-    while (1) {
+    while (TRUE) {
         current_character = fgetc(fp_input);
         ++column_number;
         /*
