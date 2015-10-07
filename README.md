@@ -28,7 +28,7 @@
                             Lex with Yacc
                             
 ## Tools and Softwares
-* I have used [lex](http://flex.sourceforge.net/)/[flex](http://dinosaur.compilertools.net/) for build scanner/lexical analizer and [YACC](http://dinosaur.compilertools.net/yacc/index.html)/BISON for syntax parsing
+* I have used [lex](http://flex.sourceforge.net/)/[flex](http://dinosaur.compilertools.net/) for build scanner/lexical analizer and [YACC](http://dinosaur.compilertools.net/yacc/index.html)/BISON for syntax parsing.[jFLAP](http://www.jflap.org) for building NFAs and conver them DFA.And you can do quite a lot of work other than what I have mentioned here. 
 
 ## Usage
 * Clone the repository and go through the source before run
